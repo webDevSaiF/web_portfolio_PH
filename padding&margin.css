@@ -1,0 +1,42 @@
+/* ==PADDING== */
+.py-20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.py-40 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.py-60 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.py-80 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+/* ==MARGIN== */
+.mt-20 {
+  margin-top: 20px;
+}
+.mt-40 {
+  margin-top: 40px;
+}
+/* ==FONT WEIGHT== */
+.fw-700 {
+  font-weight: 700;
+}
+.fw-900 {
+  font-weight: 900;
+}
+/* ==LETTER SPACING== */
+.ls-1 {
+  letter-spacing: 1px;
+}
+.ls-2 {
+  letter-spacing: 2px;
+}
+/* ==LINE HEIGHT== */
+.lh-70 {
+  line-height: 70px;
+}

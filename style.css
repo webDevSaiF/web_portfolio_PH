@@ -1,0 +1,79 @@
+/* CSS INDEX
+=> 00. VARIABLES
+=> 01. COMMON CSS
+=> 02. REUSABLE CSS
+=> 03. HERO SECTION
+
+*/
+/* ==00.VARIABLES== */
+:root {
+  --main-bg-color: #000018;
+  --white-color: #fff;
+  --light-yellow-color: #fefe72;
+  --red-color: #b11b1b;
+}
+/* ==01.COMMON CSS== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--main-bg-color);
+  color: var(--white-color);
+}
+/* ==02.REUSABLE CSS== */
+.c-section > .inner {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1240px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.c-row > .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.c-row,
+.c-column {
+  width: 100%;
+}
+img {
+  width: 100%;
+}
+.btn {
+  padding: 8px 64px;
+  border: none;
+  transition: all 0.4s ease;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.hero-btn {
+  background-color: var(--red-color);
+  color: var(--white-color);
+}
+.btn:hover {
+  opacity: 0.8;
+}
+/* ==03.HERO SECTION== */
+.hero-section .main-headline {
+  font-size: 64px;
+}
+.hero-section .headline-highlighter {
+  color: var(--light-yellow-color);
+}
+.hero-section .hero-img {
+  max-width: 580px;
+}
+.hero-section .sub-headline {
+  color: var(--red-color);
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.hero-section .plain-text {
+  font-size: 18px;
+}
