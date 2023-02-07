@@ -51,6 +51,7 @@ img {
   transition: all 0.4s ease;
   font-size: 16px;
   text-transform: uppercase;
+  border-radius: 8px;
 }
 .hero-btn {
   background-color: var(--red-color);
@@ -60,8 +61,46 @@ img {
   opacity: 0.8;
 }
 /* ==03.HERO SECTION== */
+.hero-section {
+  position: relative;
+}
+.hero-section > .inner {
+  z-index: 1;
+}
+.hero-section::after {
+  content: "";
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: var(--light-yellow-color);
+  display: block;
+  position: absolute;
+  top: -100px;
+  left: -100px;
+  z-index: 0;
+}
+.hero-section .c-row > .inner {
+  z-index: 1;
+}
 .hero-section .main-headline {
   font-size: 64px;
+}
+.hero-section .c-row::after {
+  content: "DEVELOPER";
+  font-size: 80px;
+  font-weight: 900;
+  transform: rotate(-90deg);
+
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--red-color);
+  display: block;
+  position: absolute;
+  top: 450px;
+  left: -190px;
+  z-index: 0;
+  opacity: 1;
+  letter-spacing: 3px;
 }
 .hero-section .headline-highlighter {
   color: var(--light-yellow-color);
