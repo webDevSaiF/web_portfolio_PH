@@ -2,6 +2,10 @@
   .mb-m-40 {
     margin-bottom: 40px;
   }
+  .experience-section .c-row > .inner {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 @media only screen and (max-width: 769px) {
   html {
