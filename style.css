@@ -17,6 +17,9 @@
   --exp-title: #6666cc;
 }
 /* ==01.COMMON CSS== */
+html {
+  font-size: 52.5%;
+}
 * {
   margin: 0;
   padding: 0;
@@ -49,6 +52,8 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .c-row {
   width: 100%;
@@ -57,14 +62,15 @@ img {
 }
 
 .c-column {
-  width: 100%;
+  flex: 0 1 48%;
+  max-width: 48%;
 }
 
 .btn {
   padding: 8px 64px;
   border: none;
   transition: all 0.4s ease;
-  font-size: 16px;
+  font-size: 1.6rem;
   text-transform: uppercase;
   border-radius: 8px;
   display: block;
@@ -97,11 +103,11 @@ img {
   z-index: 1;
 }
 .hero-section .main-headline {
-  font-size: 64px;
+  font-size: 6.4rem;
 }
 .hero-section .c-row::after {
   content: "DEVELOPER";
-  font-size: 80px;
+  font-size: 8rem;
   font-weight: 900;
   transform: rotate(-90deg);
 
@@ -125,11 +131,11 @@ img {
 }
 .hero-section .sub-headline {
   color: var(--red-color);
-  font-size: 24px;
+  font-size: 2.4rem;
   text-transform: uppercase;
 }
 .hero-section .plain-text {
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 .hero-btn {
   background-color: var(--red-color);
@@ -142,8 +148,8 @@ img {
 .resume-section > .inner {
   z-index: 1;
 }
-.resume-section::after {
-  content: "O";
+/* .resume-section::after {
+  content: ".";
   -webkit-text-stroke-width: 200px;
   -webkit-text-stroke-color: var(--light-yellow-color);
   display: block;
@@ -151,17 +157,17 @@ img {
   bottom: 150px;
   right: -40px;
   z-index: 0;
-}
+} */
 .resume-section .sub-headline {
   color: transparent;
   text-transform: uppercase;
-  font-size: 42px;
+  font-size: 4.2rem;
   letter-spacing: 1px;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: var(--red-color);
 }
 .resume-section .plain-text {
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 .resume-img {
   max-width: 450px;
@@ -182,7 +188,7 @@ img {
 .experience-section .section-headline {
   color: transparent;
   text-transform: uppercase;
-  font-size: 72px;
+  font-size: 7.2rem;
   letter-spacing: 5px;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: var(--light-yellow-color);
@@ -193,15 +199,15 @@ img {
   width: 100%;
 }
 .experience-section .section-headline .headline-highlighter {
-  font-size: 104px;
+  font-size: 10.4rem;
   -webkit-text-stroke-color: var(--red-color);
 }
 .experience-section .exp-headline {
-  font-size: 26px;
+  font-size: 2.6rem;
   color: var(--exp-title);
 }
 .experience-section .exp-sub-headline {
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 800;
   color: var(--red-color);
   text-transform: uppercase;
@@ -211,7 +217,7 @@ img {
   color: var(--exp-title);
 }
 .experience-section .exp-card {
-  flex: 0 0 560px;
+  flex: 0 1 560px;
   max-width: 560px;
 
   border-radius: 12px;
@@ -224,7 +230,7 @@ img {
 }
 
 .experience-section .plain-text {
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 /* ==06.FOOTER SECTION== */
 .footer-section {
@@ -232,7 +238,7 @@ img {
   box-shadow: 0 0 10px var(--red-color);
 }
 .footer-section .footer-text {
-  font-size: 12px;
+  font-size: 1.2rem;
   text-align: center;
   color: var(--red-color);
 }

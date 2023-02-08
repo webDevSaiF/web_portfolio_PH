@@ -49,3 +49,36 @@
 .lh-70 {
   line-height: 70px;
 }
+@media only screen and (max-width: 769px) {
+  /* ==TEXT ALIGN== */
+  .ta-m-center * {
+    text-align: center;
+  }
+  /* ==PADDING== */
+  .py-m-40 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .py-m-60 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  /* ==MARGIN== */
+  .mx-m-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mt-m-0 {
+    margin-top: 0;
+  }
+  .mb-m-20 {
+    margin-bottom: 20px;
+  }
+  .mb-m-40 {
+    margin-bottom: 40px;
+  }
+  /* ==DISPLAY PROPERTIES== */
+  .d-m-block {
+    display: block;
+  }
+}
