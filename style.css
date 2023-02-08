@@ -52,20 +52,17 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
+  gap: 20px;
 }
-.c-row {
+.c-row,
+.c-column {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
-
 .c-column {
-  flex: 0 1 48%;
-  max-width: 48%;
+  flex-shrink: 1;
 }
-
 .btn {
   padding: 8px 64px;
   border: none;

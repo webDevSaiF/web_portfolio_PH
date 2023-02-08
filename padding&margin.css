@@ -49,6 +49,10 @@
 .lh-70 {
   line-height: 70px;
 }
+/* ==DISPLAY PROPERTIES== */
+.jc-center > .inner {
+  justify-content: center !important;
+}
 @media only screen and (max-width: 769px) {
   /* ==TEXT ALIGN== */
   .ta-m-center * {
