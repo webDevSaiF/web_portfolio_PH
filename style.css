@@ -3,14 +3,18 @@
 => 01. COMMON CSS
 => 02. REUSABLE CSS
 => 03. HERO SECTION
+=> 04. RESUME SECTION
+=> 05. EXPERIENCE SECTION
+=> 06. FOOTER SECTION
 
 */
 /* ==00.VARIABLES== */
 :root {
   --main-bg-color: #000018;
-  --white-color: #fff;
+  --white-color: #d8e5f2;
   --light-yellow-color: #fefe72;
   --red-color: #b11b1b;
+  --exp-title: #6666cc;
 }
 /* ==01.COMMON CSS== */
 * {
@@ -22,6 +26,13 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: var(--main-bg-color);
   color: var(--white-color);
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
 }
 /* ==02.REUSABLE CSS== */
 .c-section > .inner {
@@ -32,19 +43,23 @@ body {
   max-width: 1240px;
   padding-left: 20px;
   padding-right: 20px;
+  flex-direction: column;
 }
 .c-row > .inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.c-row,
+.c-row {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .c-column {
   width: 100%;
 }
-img {
-  width: 100%;
-}
+
 .btn {
   padding: 8px 64px;
   border: none;
@@ -52,11 +67,10 @@ img {
   font-size: 16px;
   text-transform: uppercase;
   border-radius: 8px;
+  display: block;
+  max-width: 200px;
 }
-.hero-btn {
-  background-color: var(--red-color);
-  color: var(--white-color);
-}
+
 .btn:hover {
   opacity: 0.8;
 }
@@ -96,11 +110,12 @@ img {
   -webkit-text-stroke-color: var(--red-color);
   display: block;
   position: absolute;
-  top: 450px;
+  top: 400px;
   left: -190px;
   z-index: 0;
   opacity: 1;
   letter-spacing: 3px;
+  opacity: 0.5;
 }
 .hero-section .headline-highlighter {
   color: var(--light-yellow-color);
@@ -115,4 +130,109 @@ img {
 }
 .hero-section .plain-text {
   font-size: 18px;
+}
+.hero-btn {
+  background-color: var(--red-color);
+  color: var(--white-color);
+}
+/* ==04.RESUME SECTION== */
+.resume-section {
+  position: relative;
+}
+.resume-section > .inner {
+  z-index: 1;
+}
+.resume-section::after {
+  content: "O";
+  -webkit-text-stroke-width: 200px;
+  -webkit-text-stroke-color: var(--light-yellow-color);
+  display: block;
+  position: absolute;
+  bottom: 150px;
+  right: -40px;
+  z-index: 0;
+}
+.resume-section .sub-headline {
+  color: transparent;
+  text-transform: uppercase;
+  font-size: 42px;
+  letter-spacing: 1px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: var(--red-color);
+}
+.resume-section .plain-text {
+  font-size: 18px;
+}
+.resume-img {
+  max-width: 450px;
+}
+.resume-btn {
+  background-color: var(--red-color);
+  color: var(--white-color);
+  max-width: 300px;
+  padding: 8px 40px;
+  text-align: center;
+}
+/* ==05.EXPERIENCE SECTION== */
+.experience-section {
+  background: url("./images/exp-bg.png");
+  background-repeat: no-repeat;
+  background-position: bottom 0% left -4%;
+}
+.experience-section .section-headline {
+  color: transparent;
+  text-transform: uppercase;
+  font-size: 72px;
+  letter-spacing: 5px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: var(--light-yellow-color);
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.experience-section .section-headline .headline-highlighter {
+  font-size: 104px;
+  -webkit-text-stroke-color: var(--red-color);
+}
+.experience-section .exp-headline {
+  font-size: 26px;
+  color: var(--exp-title);
+}
+.experience-section .exp-sub-headline {
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--red-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.experience-section .sub-highlighter {
+  color: var(--exp-title);
+}
+.experience-section .exp-card {
+  flex: 0 0 560px;
+  max-width: 560px;
+
+  border-radius: 12px;
+  box-shadow: 0px 0px 20px var(--exp-title);
+  transition: all 0.4s ease;
+  border-left: 7px solid var(--white-color);
+}
+.experience-section .exp-card:hover {
+  box-shadow: 0px 0px 10px var(--exp-title);
+}
+
+.experience-section .plain-text {
+  font-size: 16px;
+}
+/* ==06.FOOTER SECTION== */
+.footer-section {
+  opacity: 0.9;
+  box-shadow: 0 0 10px var(--red-color);
+}
+.footer-section .footer-text {
+  font-size: 12px;
+  text-align: center;
+  color: var(--red-color);
 }
